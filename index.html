@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Med Youssef Zitoun</title>
+
+  <link rel="shortcut icon" href="images/MYZ rounted.png" type="image/x-icon">
+
+  <!-- box icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body onload="loader()">
+  <!-- loader -->
+  <div class="loader" id="loader">
+    <svg height="0" width="0" viewBox="0 0 64 64" class="absolute">
+      <defs class="s-xJBuHA073rTt" xmlns="http://www.w3.org/2000/svg">
+        <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="2" x2="0" y1="62" x1="0" id="b">
+          <stop class="s-xJBuHA073rTt" stop-color="#973BED"></stop>
+          <stop class="s-xJBuHA073rTt" stop-color="#007CFF" offset="1"></stop>
+        </linearGradient>
+        <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="0" x2="0" y1="64" x1="0" id="c">
+          <stop class="s-xJBuHA073rTt" stop-color="#FFC800"></stop>
+          <stop class="s-xJBuHA073rTt" stop-color="#F0F" offset="1"></stop>
+          <animateTransform repeatCount="indefinite"
+            keySplines=".42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1"
+            keyTimes="0; 0.125; 0.25; 0.375; 0.5; 0.625; 0.75; 0.875; 1" dur="8s"
+            values="0 32 32;-270 32 32;-270 32 32;-540 32 32;-540 32 32;-810 32 32;-810 32 32;-1080 32 32;-1080 32 32"
+            type="rotate" attributeName="gradientTransform"></animateTransform>
+        </linearGradient>
+        <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="2" x2="0" y1="62" x1="0" id="d">
+          <stop class="s-xJBuHA073rTt" stop-color="#00E0ED"></stop>
+          <stop class="s-xJBuHA073rTt" stop-color="#00DA72" offset="1"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" height="64" width="64" class="inline-block">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="8" stroke="url(#b)"
+        d="M 54.722656,3.9726563 A 2.0002,2.0002 0 0 0 54.941406,4 h 5.007813 C 58.955121,17.046124 49.099667,27.677057 36.121094,29.580078 a 2.0002,2.0002 0 0 0 -1.708985,1.978516 V 60 H 29.587891 V 31.558594 A 2.0002,2.0002 0 0 0 27.878906,29.580078 C 14.900333,27.677057 5.0448787,17.046124 4.0507812,4 H 9.28125 c 1.231666,11.63657 10.984383,20.554048 22.6875,20.734375 a 2.0002,2.0002 0 0 0 0.02344,0 c 11.806958,0.04283 21.70649,-9.003371 22.730469,-20.7617187 z"
+        class="dash" id="y" pathLength="360"></path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="--rotation-duration:0ms; --rotation-direction:normal;"
+      viewBox="0 0 64 64" height="64" width="64" class="inline-block">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="10" stroke="url(#c)" d="M 32 32
+            m 0 -27
+            a 27 27 0 1 1 0 54
+            a 27 27 0 1 1 0 -54" class="spin" id="o" pathLength="360"></path>
+    </svg>
+    <div class="w-2"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="--rotation-duration:0ms; --rotation-direction:normal;"
+      viewBox="0 0 64 64" height="64" width="64" class="inline-block">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="8" stroke="url(#d)"
+        d="M 4,4 h 4.6230469 v 25.919922 c -0.00276,11.916203 9.8364941,21.550422 21.7500001,21.296875 11.616666,-0.240651 21.014356,-9.63894 21.253906,-21.25586 a 2.0002,2.0002 0 0 0 0,-0.04102 V 4 H 56.25 v 25.919922 c 0,14.33873 -11.581192,25.919922 -25.919922,25.919922 a 2.0002,2.0002 0 0 0 -0.0293,0 C 15.812309,56.052941 3.998433,44.409961 4,29.919922 Z"
+        class="dash" id="u" pathLength="360"></path>
+    </svg>
+  </div>
+
+  <div id="All" style="display: none;">
+    <!-- header design -->
+    <header class="header">
+      <a class="logo">Portfolio</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" onclick="window.scrollTo(0, 0);" style="--i:1;" class="active">Home</a>
+        <a href="#projects" style="--i:2;">Projects</a>
+        <a href="#contact" style="--i:4;">Contact</a>
+      </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home">
+      <div class="home-content">
+        <h3>Hi, It's Me</h3>
+        <h1>Mohamed Youssef Zitoun</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>Everything you're going through right now is happening to you on purpose to transform you into the person you
+          were created to be. But if you give up, you will never become that person... <b>Don't give up</b></p>
+
+        <div class="social-media">
+          <a href="https://www.facebook.com/pdg.you.ssef/" style="--i:5;" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <a href="https://www.instagram.com/pdg.you_ssef" style="--i:6;" target="_blank"><i class='bx bxl-instagram'></i></a>
+          <a href="https://www.youtube.com/@med-youssef-zitoun" style="--i:7;" target="_blank"><i class='bx bxl-youtube'></i></a>
+          <a href="https://github.com/Med-Youssef-Zitoun" style="--i:8;" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+
+        <a href="#" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="images/homeMYZ.png" alt="">
+      </div>
+    </section>
+ 
+    <!-- projects section design -->
+    <section class="projects" id="projects">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="portfolio-container">
+
+        <div class="portfolio-box">
+          <img src="images/War Of Power soon.png" alt="">
+          <div class="portfolio-layer">
+            <h4>War Of Power</h4>
+            <p>Soon</p>
+            <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/One-Eyed Chase.png" alt="">
+          <div class="portfolio-layer">
+            <h4>One-Eyed Chase</h4>
+            <p>The player fights monsters with superpowers to progress through different levels</p>
+            <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/Cleaning2Survive.png" alt="">
+          <div class="portfolio-layer">
+            <h4>Cleaning2Survive</h4>
+            <p>A man from a country overwhelmed with garbage decided to clean up the waste</p>
+            <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <div class="form">
+        <form action="https://formcarry.com/s/f2Mb8hES-LF" method="POST" class="formcarry-form">
+          <div class="input-box">
+            <input type="text" id="name" name="fullName" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" id="email" name="email" required>
+          </div>
+
+          <div class="input-box">
+            <input type="text" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+          </div>
+
+          <textarea placeholder="Your Message" name="message" id="message"></textarea>
+          <input type="submit" value="Send Message" class="btn">
+        </form>
+      </div>
+    </section>
+
+
+
+    <!-- #social media-->
+
+    <div class="card" id="social">
+      <ul>
+        <!-- facebook -->
+        <li>
+          <a class="socialContainer containerFour" href="https://www.facebook.com/pdg.you.ssef/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="500" height="500" viewBox="0 0 50 50"
+              class="socialSvg">
+              <path
+                d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
+              </path>
+            </svg>
+          </a>
+        </li>
+
+        <!-- instagram -->
+        <li>
+          <a class="socialContainer containerOne" href="https://www.instagram.com/pdg.you_ssef" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 24 24"
+              class="socialSvg">
+              <path
+                d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z">
+              </path>
+            </svg>
+          </a>
+        </li>
+
+        <!-- threads -->
+        <li>
+          <a class="socialContainer containersix" href="https://www.threads.net/@pdg.you_ssef" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Threads" viewBox="0 0 192 192" id="threads"
+              class="socialSvg">
+              <path
+                d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z"
+                class="x19hqcy"></path>
+            </svg>
+          </a>
+        </li>
+
+        <!-- youtube -->
+        <li>
+          <a class="socialContainer containerTwo" href="https://www.youtube.com/@med-youssef-zitoun" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 24 24"
+              class="socialSvg">
+              <path
+                d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z">
+              </path>
+            </svg>
+          </a>
+        </li>
+
+        <!-- github -->
+        <li>
+          <a class="socialContainer containersix" href="https://github.com/Med-Youssef-Zitoun" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="socialSvg">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+              </path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 You Ssef | All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- GO TO TOP -->
+    <div class="iconTop" id="GoTop">
+      <a onclick="window.scrollTo(0, 0);" style="cursor: pointer;"><i class='bx bx-chevron-up'></i></a>
+    </div>
+  </div>
+
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- typed js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- custom js -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
