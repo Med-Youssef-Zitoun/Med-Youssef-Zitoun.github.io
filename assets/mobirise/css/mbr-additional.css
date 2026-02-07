@@ -585,6 +585,9 @@ a:hover {
   color: #fbfbfb;
 }
 /* Scroll to top button*/
+.scrollToTop_wraper {
+  display: none;
+}
 .form-control {
   font-family: 'Jost', sans-serif;
   font-size: 1.1rem;
@@ -1117,7 +1120,7 @@ a {
 .cid-vaoMxLaWzf .mbr-text,
 .cid-vaoMxLaWzf .mbr-section-btn {
   text-align: left;
-  color: #ffffff;
+  color: #bbbbbb;
 }
 .cid-vaoMxLaWzf .item-title {
   text-align: left;
@@ -1125,7 +1128,7 @@ a {
 }
 .cid-vaoMxLaWzf .item-subtitle {
   text-align: left;
-  color: #bbbbbb;
+  color: #d6d6d6;
 }
 .cid-vaoMxLaWzf .embla__slide {
   display: flex;
