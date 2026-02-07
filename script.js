@@ -1,6 +1,6 @@
 function loader() {
     document.body.classList.add("loading");
-    myVar = setTimeout(showPage, 2000);
+    myVar = setTimeout(showPage, 1500);
     goTopBtn.style.display = "none";
 }
 
