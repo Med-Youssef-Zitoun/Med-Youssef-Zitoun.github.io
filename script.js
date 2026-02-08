@@ -1,12 +1,18 @@
 function loader() {
     document.body.classList.add("loading");
-    myVar = setTimeout(showPage, 1500);
+    document.body.style.overflow = "hidden";
+    myVar = setTimeout(showPage, 1000);
     goTopBtn.style.display = "none";
 }
 
 function showPage() {
     document.getElementById("loader").style.display = "none";
-    document.getElementById("All").style.display = "block";
+    const sections = document.querySelectorAll("section");
+    sections.forEach(section => {
+        section.style.visibility = "visible";
+    });
+    document.body.style.overflow = "auto";
+    window.location.href = 'index.html#header11-1';
     document.body.classList.remove("loading");
 
     const id = window.location.href.split("#")[1];
