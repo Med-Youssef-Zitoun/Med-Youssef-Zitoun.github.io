@@ -1,22 +1,34 @@
+let myVar;
+
 function loader() {
     document.body.classList.add("loading");
     document.body.style.overflow = "hidden";
+
+    window.scrollTo(0, 0);
+
     myVar = setTimeout(showPage, 800);
-    goTopBtn.style.display = "none";
+
+    if (typeof goTopBtn !== "undefined") {
+        goTopBtn.style.display = "none";
+    }
 }
 
 function showPage() {
-    document.getElementById("loader").style.display = "none";
-    const sections = document.querySelectorAll("section");
-    sections.forEach(section => {
+    const loaderEl = document.getElementById("loader");
+    if (loaderEl) loaderEl.style.display = "none";
+
+    document.querySelectorAll("section").forEach(section => {
         section.style.visibility = "visible";
     });
+
     document.body.style.overflow = "auto";
-    window.location.href = 'index.html#header11-1';
     document.body.classList.remove("loading");
 
-    const id = window.location.href.split("#")[1];
-    if (id) {
-        document.getElementById(id).scrollIntoView();
-    }
+    setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "instant" });
+
+        if (window.EmblaCarousel) {
+            window.dispatchEvent(new Event("resize"));
+        }
+    }, 50);
 }

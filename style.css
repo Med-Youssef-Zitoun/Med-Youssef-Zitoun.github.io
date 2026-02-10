@@ -1,4 +1,4 @@
-.loader {
+.loader{
     position: fixed;
     inset: 0; /* top:0; right:0; bottom:0; left:0 */
     display: flex;
@@ -9,6 +9,12 @@
     height: 100vh;
     z-index: 9999;
 }
+
+body.loading section {
+    pointer-events: none;
+}
+
+
  
 .spinner {
   width: 70.4px;
