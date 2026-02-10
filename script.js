@@ -1,7 +1,7 @@
 function loader() {
     document.body.classList.add("loading");
     document.body.style.overflow = "hidden";
-    myVar = setTimeout(showPage, 1000);
+    myVar = setTimeout(showPage, 800);
     goTopBtn.style.display = "none";
 }
 
